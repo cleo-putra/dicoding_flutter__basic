@@ -133,7 +133,7 @@ class _WebViewState extends State<WebView> {
                                       ),
                                       SizedBox(width: 10),
                                       Text(
-                                        'Dimas',
+                                        'Acesam',
                                         style: Theme.of(context)
                                             .primaryTextTheme
                                             .headline4!
@@ -173,7 +173,7 @@ class _WebViewState extends State<WebView> {
                                   ),
                                 ),
                                 Text(
-                                  'Because every miles count!',
+                                  'Because every calories count!',
                                   style: Theme.of(context)
                                       .primaryTextTheme
                                       .headline4!
@@ -234,13 +234,13 @@ class _WebViewState extends State<WebView> {
                                     SizedBox(height: 40),
                                     CircleAvatar(
                                       backgroundImage: AssetImage(
-                                        'assets/images/airliner_ga.png',
+                                        'assets/images/logo-ff.jpg',
                                       ),
                                       radius: 70,
                                     ),
                                     SizedBox(height: 15),
                                     Text(
-                                      'Garuda Indonesia',
+                                      'Fitness First',
                                       style: TextStyle(
                                         fontSize: 20,
                                         fontWeight: FontWeight.bold,
@@ -248,7 +248,7 @@ class _WebViewState extends State<WebView> {
                                       ),
                                     ),
                                     Text(
-                                      'GA-833',
+                                      'PL-022',
                                       style: TextStyle(
                                         fontSize: 15,
                                         fontWeight: FontWeight.bold,
@@ -256,7 +256,7 @@ class _WebViewState extends State<WebView> {
                                     ),
                                     SizedBox(height: 20),
                                     Text(
-                                      'UPG - CGK',
+                                      'FF - JKT',
                                       style: TextStyle(
                                         fontSize: 20,
                                         fontWeight: FontWeight.bold,
@@ -324,66 +324,6 @@ class _WebViewState extends State<WebView> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              'Leaderboard',
-                              style: Theme.of(context)
-                                  .primaryTextTheme
-                                  .headline3!
-                                  .copyWith(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.black,
-                                    fontSize: 25,
-                                  ),
-                            ),
-                            SizedBox(height: 20),
-                            Container(
-                              height: 100,
-                              child: ListView.builder(
-                                scrollDirection: Axis.horizontal,
-                                itemBuilder: (_, index) {
-                                  List<Leaderboard> data =
-                                      Leaderboard.generateRandomLeaderboard(15);
-                                  // urutkan dengan miles terbanyak
-                                  data.sort(
-                                    (a, b) => b.miles!.compareTo(a.miles!),
-                                  );
-
-                                  return Padding(
-                                    padding:
-                                        EdgeInsets.symmetric(horizontal: 10),
-                                    child: Column(
-                                      children: [
-                                        CircleAvatar(
-                                          maxRadius: 25,
-                                          backgroundColor:
-                                              data[index].backgroundColor,
-                                          child: Icon(
-                                            Icons.person,
-                                            color: Colors.white,
-                                            size: 25,
-                                          ),
-                                        ),
-                                        Text(
-                                          data[index].name.toString(),
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                        Text(
-                                          "${data[index].miles} Miles",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 10,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  );
-                                },
-                                itemCount:
-                                    Leaderboard.generateRandomLeaderboard(15)
-                                        .length,
-                              ),
-                            ),
                             Text(
                               'Healthy Travel Tips',
                               style: Theme.of(context)
@@ -482,7 +422,7 @@ class MobileView extends StatelessWidget {
                           },
                           blendMode: BlendMode.dstIn,
                           child: Image.asset(
-                            'assets/images/intro.jpg',
+                            'assets/images/push-up.jpg',
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -548,7 +488,7 @@ class MobileView extends StatelessWidget {
                                     ),
                                   ),
                                   Text(
-                                    'Dimas',
+                                    'Acesam',
                                     style: Theme.of(context)
                                         .primaryTextTheme
                                         .headline3!
@@ -562,7 +502,7 @@ class MobileView extends StatelessWidget {
                                     ),
                                   ),
                                   Text(
-                                    'Traveller',
+                                    'PowerLifter',
                                     style: Theme.of(context)
                                         .primaryTextTheme
                                         .headline5!
@@ -608,12 +548,12 @@ class MobileView extends StatelessWidget {
                                               children: [
                                                 CircleAvatar(
                                                   backgroundImage: AssetImage(
-                                                    'assets/images/airliner_ga.png',
+                                                    'assets/images/ff.png',
                                                   ),
                                                   radius: 23,
                                                 ),
                                                 Text(
-                                                  'GA-833',
+                                                  'PL-022',
                                                   style: TextStyle(
                                                     fontSize: 10,
                                                     fontWeight: FontWeight.bold,
@@ -627,7 +567,7 @@ class MobileView extends StatelessWidget {
                                                   MainAxisAlignment.center,
                                               children: [
                                                 Text(
-                                                  'NEXT FLIGHT',
+                                                  'NEXT CLASS',
                                                   style: TextStyle(
                                                     fontSize: 11,
                                                     color: Colors.blue,
@@ -635,14 +575,14 @@ class MobileView extends StatelessWidget {
                                                   ),
                                                 ),
                                                 Text(
-                                                  '234 Miles',
+                                                  '372 Calories',
                                                   style: TextStyle(
                                                     fontSize: 9,
                                                     color: Colors.black,
                                                   ),
                                                 ),
                                                 Text(
-                                                  'UPG - CGK',
+                                                  'UPPER BODY (Shoulder)',
                                                   style: Theme.of(context)
                                                       .primaryTextTheme
                                                       .headline4!
@@ -663,7 +603,7 @@ class MobileView extends StatelessWidget {
                                                     ),
                                                     SizedBox(width: 5),
                                                     Text(
-                                                      '10:15 LT',
+                                                      '10:15 WIB',
                                                       style: TextStyle(
                                                         fontSize: 11,
                                                       ),
@@ -691,15 +631,15 @@ class MobileView extends StatelessWidget {
                                                 MainAxisAlignment.center,
                                             children: [
                                               Text(
-                                                'TOTAL MILES',
+                                                'Burned Calories',
                                                 style: TextStyle(
-                                                  fontSize: 11,
+                                                  fontSize: 10,
                                                   color: Colors.blue,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
                                               Text(
-                                                '102 Flights',
+                                                '3 Days row',
                                                 style: TextStyle(
                                                   fontSize: 9,
                                                   color: Colors.black,
@@ -707,7 +647,7 @@ class MobileView extends StatelessWidget {
                                               ),
                                               SizedBox(height: 5),
                                               Text(
-                                                '100 K',
+                                                '1238 Cals',
                                                 style: Theme.of(context)
                                                     .primaryTextTheme
                                                     .headline4!
@@ -730,82 +670,82 @@ class MobileView extends StatelessWidget {
                     ],
                   ),
                 ),
-                Container(
-                  padding: EdgeInsets.symmetric(horizontal: 25),
-                  child: Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            'Leaderboard',
-                            style: Theme.of(context)
-                                .primaryTextTheme
-                                .headline4!
-                                .copyWith(color: Colors.black54),
-                          ),
-                          TextButton(
-                            onPressed: alertComingSoonMessage,
-                            child: Text(
-                              'See All',
-                              style: Theme.of(context)
-                                  .primaryTextTheme
-                                  .headline5!
-                                  .copyWith(color: Colors.blue),
-                            ),
-                          ),
-                        ],
-                      ),
-                      Container(
-                        height: 80,
-                        child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
-                          itemBuilder: (_, index) {
-                            List<Leaderboard> data =
-                                Leaderboard.generateRandomLeaderboard(8);
-                            // urutkan dengan miles terbanyak
-                            data.sort(
-                              (a, b) => b.miles!.compareTo(a.miles!),
-                            );
+                // Container(
+                //   padding: EdgeInsets.symmetric(horizontal: 25),
+                //   child: Column(
+                //     children: [
+                //       // Row(
+                //       //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //       //   children: [
+                //       //     Text(
+                //       //       'Leaderboard',
+                //       //       style: Theme.of(context)
+                //       //           .primaryTextTheme
+                //       //           .headline4!
+                //       //           .copyWith(color: Colors.black54),
+                //       //     ),
+                //       //     TextButton(
+                //       //       onPressed: alertComingSoonMessage,
+                //       //       child: Text(
+                //       //         'See All',
+                //       //         style: Theme.of(context)
+                //       //             .primaryTextTheme
+                //       //             .headline5!
+                //       //             .copyWith(color: Colors.blue),
+                //       //       ),
+                //       //     ),
+                //       //   ],
+                //       // ),
+                //       Container(
+                //         height: 80,
+                //         child: ListView.builder(
+                //           scrollDirection: Axis.horizontal,
+                //           itemBuilder: (_, index) {
+                //             List<Leaderboard> data =
+                //                 Leaderboard.generateRandomLeaderboard(8);
+                //             // urutkan dengan miles terbanyak
+                //             data.sort(
+                //               (a, b) => b.miles!.compareTo(a.miles!),
+                //             );
 
-                            return Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 10),
-                              child: Column(
-                                children: [
-                                  CircleAvatar(
-                                    maxRadius: 25,
-                                    backgroundColor:
-                                        data[index].backgroundColor,
-                                    child: Icon(
-                                      Icons.person,
-                                      color: Colors.white,
-                                      size: 25,
-                                    ),
-                                  ),
-                                  Text(
-                                    data[index].name.toString(),
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.bold),
-                                  ),
-                                  Text(
-                                    "${data[index].miles} Miles",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 10,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            );
-                          },
-                          itemCount:
-                              Leaderboard.generateRandomLeaderboard(8).length,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
+                //             return Padding(
+                //               padding: EdgeInsets.symmetric(horizontal: 10),
+                //               child: Column(
+                //                 children: [
+                //                   CircleAvatar(
+                //                     maxRadius: 25,
+                //                     backgroundColor:
+                //                         data[index].backgroundColor,
+                //                     child: Icon(
+                //                       Icons.person,
+                //                       color: Colors.white,
+                //                       size: 25,
+                //                     ),
+                //                   ),
+                //                   Text(
+                //                     data[index].name.toString(),
+                //                     style:
+                //                         TextStyle(fontWeight: FontWeight.bold),
+                //                   ),
+                //                   Text(
+                //                     "${data[index].miles} Miles",
+                //                     style: TextStyle(
+                //                       fontWeight: FontWeight.bold,
+                //                       fontSize: 10,
+                //                     ),
+                //                   ),
+                //                 ],
+                //               ),
+                //             );
+                //           },
+                //           itemCount:
+                //               Leaderboard.generateRandomLeaderboard(8).length,
+                //         ),
+                //       ),
+                //     ],
+                //   ),
+                // ),
+                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 25),
                   child: Column(
                     children: [
@@ -813,7 +753,7 @@ class MobileView extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            'Healthy Travel Tips',
+                            'Workout Challenges',
                             style: Theme.of(context)
                                 .primaryTextTheme
                                 .headline4!
@@ -871,7 +811,7 @@ class MobileView extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            'Travel History',
+                            'Workout Events',
                             style: Theme.of(context)
                                 .primaryTextTheme
                                 .headline4!

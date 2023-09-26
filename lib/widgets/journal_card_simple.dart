@@ -29,10 +29,10 @@ class _JournalCardSimpleState extends State<JournalCardSimple> {
 
     switch (widget.ariline!) {
       case RegisteredAirlines.DicodingAir:
-        logo = 'assets/images/airliner_dc.jpg';
+        logo = 'assets/images/ff.png';
         break;
       case RegisteredAirlines.GarudaIndonesia:
-        logo = 'assets/images/airliner_ga.png';
+        logo = 'assets/images/golds.png';
         break;
     }
 
@@ -98,7 +98,7 @@ class _JournalCardSimpleState extends State<JournalCardSimple> {
                         .copyWith(color: Colors.black),
                   ),
                   Text(
-                    'Miles',
+                    'Cals',
                     style: TextStyle(color: Colors.blue),
                   ),
                 ],

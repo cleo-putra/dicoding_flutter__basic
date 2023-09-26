@@ -26,8 +26,8 @@ class TravelHistory {
     List<TravelHistory> list = [];
 
     // list of a cities
-    List cityFrom = ['CGK', 'UPG', 'SUB', 'SOC', 'DPS'];
-    List cityTo = ['BTJ', 'BPN', 'BDO', 'JOG', 'SRG'];
+    List cityFrom = ['Celebrity Fitness', 'Fitness First', 'Fitnes Hub', 'Golds Gym'];
+    List cityTo = ['JKT', 'SBY', 'BDG', 'JOG', 'SMGs'];
 
     // generate here
     for (var i = 0; i < count; i++) {
@@ -37,9 +37,9 @@ class TravelHistory {
           route:
               '${cityFrom[Random().nextInt(cityFrom.length)]}-${cityTo[Random().nextInt(cityTo.length)]}',
           date:
-              '${Random().nextInt(31).toString().padLeft(2, '0')} July 2021 - ${Random().nextInt(12).toString().padLeft(2, '0')}:00 PM',
+              '${Random().nextInt(31).toString().padLeft(2, '0')} September 2022 - ${Random().nextInt(12).toString().padLeft(2, '0')}:00 PM',
           flightNumber:
-              "${(i % 2 == 0) ? 'GA-' : 'DC-'}${Random().nextInt(100).toString().padLeft(3, '0')}",
+              "${(i % 2 == 0) ? 'FF-' : 'CF-'}${Random().nextInt(100).toString().padLeft(3, '0')}",
           airline: (i % 2 == 0)
               ? RegisteredAirlines.GarudaIndonesia
               : RegisteredAirlines.DicodingAir,

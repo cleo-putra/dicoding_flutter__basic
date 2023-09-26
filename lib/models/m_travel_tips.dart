@@ -18,7 +18,7 @@ class TravelTips {
 
     // color list
     final List<String> listImages = [
-      'https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
+      'https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     ];
 
     // generate here
@@ -26,10 +26,10 @@ class TravelTips {
       list.add(
         TravelTips(
           id: i,
-          title: 'Travel Tips No. ${i + 1}',
+          title: 'Workout Tips No. ${i + 1}',
           imageURL: listImages[Random().nextInt(listImages.length)],
           date:
-              '${Random().nextInt(31).toString().padLeft(2, '0')} July 2021 - ${Random().nextInt(12).toString().padLeft(2, '0')}:00 PM',
+              '${Random().nextInt(31).toString().padLeft(2, '0')} August 2022 ',
         ),
       );
     }
